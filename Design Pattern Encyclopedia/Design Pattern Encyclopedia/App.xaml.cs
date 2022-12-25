@@ -1,9 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
+﻿// -----------------------------------------------------------------------
+//   <copyright file=App.cs>
+//      Copyright © 2022. All Rights Reserved.
+//   </copyright>
+// -----------------------------------------------------------------------
+//  <Author>Vaibhav Lawand</Author>
+
 using System.Windows;
 
 namespace Design_Pattern_Encyclopedia
@@ -13,6 +14,8 @@ namespace Design_Pattern_Encyclopedia
     /// </summary>
     public partial class App : Application
     {
+        #region Protected Methods
+
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
@@ -20,5 +23,7 @@ namespace Design_Pattern_Encyclopedia
             UnityBootstrapper unityBootstrapper = new UnityBootstrapper();
             unityBootstrapper.Run();
         }
+
+        #endregion Protected Methods
     }
 }
